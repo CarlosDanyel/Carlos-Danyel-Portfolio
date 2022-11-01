@@ -1,0 +1,106 @@
+.sobreMim {
+    @include style;
+    background-color: $cor-background-principal;
+
+    .sobreMim__display {
+        @include display;
+    }
+
+    .sobreMim__conteiner {
+        display: flex;
+        padding: 6.6rem 0;
+        justify-content: space-around;
+        width: 100%;
+        gap: 5rem;
+
+        @media screen {
+            @media (max-width:820px) {
+                text-align: center;
+            }
+        }
+
+        .sobreMim__img {
+            padding: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $cor-background-secundario;
+
+            &:hover .sobreMim__svg {
+                transform: scale(1.09);
+            }
+
+            .sobreMim__svg {
+                transition: 800ms;
+            }
+
+            @media screen {
+                @media (max-width:820px) {
+                    display: none;
+                }
+            }
+        }
+
+        .sobreMim__conteudo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+
+            .sobreMim__titulo {
+                @include titulos
+            }
+
+            .sobreMim__regiao {
+                font-size: 19px;
+                font-weight: 400;
+                color: $cor-texto-destaque;
+            }
+
+            .sobreMim__descriçao {
+                font-size: 17px;
+                font-weight: 300;
+                color: $cor-texto-cinza;
+                max-width: 85%;
+
+                @media screen {
+                    @media (max-width:820px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .sobreMim__botao__conteiner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            @media screen {
+                @media (max-width:820px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 1rem;
+                }
+            }
+
+            .sobreMim__dev {
+                background: transparent;
+                padding: .5rem 3rem;
+                border: 1.5px solid $cor-texto;
+                font-size: 16px;
+                font-weight: 400;
+                color: $cor-texto-cinza;
+                text-decoration: none;
+                transition: 400ms;
+                cursor: pointer;
+
+                &:hover {
+                    color: $cor-texto;
+                    border: 1.5px solid $cor-texto-destaque;
+                }
+            }
+        }
+    }
+}

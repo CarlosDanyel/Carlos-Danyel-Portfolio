@@ -1,0 +1,60 @@
+.instituição {
+    @include style;
+
+    background-color: $cor-background-secundario;
+
+    .instituição__display {
+        @include display
+    }
+
+    .instituição__conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5rem;
+        padding: 2rem 0;
+
+        .instituição__box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 33rem;
+            padding: 1rem;
+            border: 1px solid $cor-background-principal;
+            background-color: $cor-background-principal ;
+            transition: 400ms;
+
+            // 46.4%
+
+            &:hover .instituição__text .instituição__text__duraçao {
+                color: $cor-texto;
+            }
+
+            .instituição__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .instituição__text__dev {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $cor-texto-destaque;
+                }
+
+                .instituição__text__duraçao {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $cor-texto-cinza;
+                    transition: 400ms;
+
+                }
+
+                .instituição__text__name {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $cor-texto;
+                }
+            }
+        }
+    }
+}

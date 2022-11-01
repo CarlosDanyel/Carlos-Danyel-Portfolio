@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #101013;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0 1rem;
+
+    .header__display {
+        @include display;
+    }
+
+    .header__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        .navbar__container {
+            display: flex;
+            list-style: none;
+            gap: 5rem;
+            transition: 400ms ease-in-out;
+
+            .header__navbarList {
+                text-decoration: none;
+                color: $cor-texto-cinza;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 300;
+                transition: 400ms;
+                text-decoration: none;
+
+                &:hover {
+                    color: $cor-texto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.conhecimentos {
+    @include style;
+    background-color: $cor-background-secundario;
+
+    .conhecimentos__display {
+        @include display;
+    }
+
+    .header__logo {
+        cursor: pointer;
+    }
+
+    .conhecimentos__conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 4rem 0;
+        gap: 4.6rem;
+    }
+
+    .conhecimentos__svg {
+        transition: 800ms;
+    }
+
+    .conhecimentos__icones {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $cor-background-principal;
+
+
+        &:hover .conhecimentos__svg {
+            transform: scale(1.100);
+        }
+
+
+    }
+}

@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@mixin display {
+    width: 100%;
+    max-width: 1139px;
+    margin: 0 auto;
+}
+
+@mixin titulos {
+    font-size: 30px;
+    font-weight: 600;
+    color: $cor-texto;
+
+    .decoration {
+        color: $cor-texto-destaque;
+    }
+}
+
+@mixin style {
+    padding: 1rem;
+    width: 100%;
+}
+
+@mixin animaçao {
+    @keyframes pulsar {
+        0% {
+            transform: 0;
+        }
+
+        100% {
+            transform: scale(1.100);
+        }
+    }
+}

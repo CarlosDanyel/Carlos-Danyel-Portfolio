@@ -159,7 +159,7 @@ header .header__navbar .navbar__container .header__navbarList:hover {
   gap: 2rem;
 }
 .home .home__container__text {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .home .home__container__text .home__animacao {
   font-size: 20px;
@@ -209,6 +209,26 @@ header .header__navbar .navbar__container .header__navbarList:hover {
     padding: 0.1rem 0;
   }
 }
+@media screen and (max-height: 706px) {
+  .home .home__container__text .home__titulo {
+    font-size: 50px;
+  }
+}
+@media screen and (max-height: 700px) and (max-width: 402px) {
+  .home .home__container__text .home__titulo {
+    font-size: 25px;
+  }
+}
+@media screen and (max-height: 708px) and (max-width: 352px) {
+  .home .home__container__text .home__titulo {
+    font-size: 25px;
+  }
+}
+@media screen and (max-height: 695px) and (max-width: 574px) {
+  .home .home__container__text .home__titulo {
+    font-size: 40px;
+  }
+}
 .home .home__container__text .home__descricao {
   font-size: 20px;
   font-weight: 300;
@@ -247,6 +267,7 @@ header .header__navbar .navbar__container .header__navbarList:hover {
 .home .home__icones {
   position: fixed;
   left: 2%;
+  top: 23%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -257,12 +278,17 @@ header .header__navbar .navbar__container .header__navbarList:hover {
     display: none;
   }
 }
+@media screen and (max-height: 724px) {
+  .home .home__icones {
+    display: none;
+  }
+}
 .home .home__icones::before {
   content: "";
   z-index: 1;
   align-self: center;
   width: 4px;
-  height: 15vh;
+  height: 12vh;
   background: #00e1ff;
 }
 .home .home__icones::after {
@@ -270,7 +296,7 @@ header .header__navbar .navbar__container .header__navbarList:hover {
   z-index: 1;
   align-self: center;
   width: 4px;
-  height: 15vh;
+  height: 12vh;
   background: #00e1ff;
 }
 .home .home__icones svg {
@@ -282,6 +308,8 @@ header .header__navbar .navbar__container .header__navbarList:hover {
   transform: scaleX(0.8);
 }
 .home .home__scroll {
+  background: transparent;
+  border: none;
   position: relative;
   top: 10%;
   left: 0;
@@ -290,7 +318,7 @@ header .header__navbar .navbar__container .header__navbarList:hover {
           animation: pulsar 3s ease-in-out infinite;
   cursor: pointer;
 }
-@media (max-height: 740px) {
+@media (max-height: 696px) {
   .home .home__scroll {
     display: none;
   }
@@ -718,5 +746,8 @@ header .header__mobile-menu.active .line:nth-child(3) {
   top: -3px;
 }
 header .navbar__container.active {
+  right: 0;
+}
+header .header__navbar__text.active .navbar__container.active {
   right: 0;
 }/*# sourceMappingURL=app.css.map */

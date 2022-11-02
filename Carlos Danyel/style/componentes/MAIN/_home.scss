@@ -34,12 +34,28 @@
 
             @media screen {
 
-                @media (max-width:751px) {
+                // NOTEBOOk
+
+                @media (max-width: 1200px) {
                     font-size: 55px;
                 }
 
+                @media (max-width: 1050px) {
+                    font-size: 55px;
+                }
+
+                @media (max-width: 900px) {
+                    font-size: 55px;
+                }
+
+                // ANDROID
+
+                @media (max-width:751px) {
+                    font-size: 50px;
+                }
+
                 @media (max-width:637px) {
-                    font-size: 45px;
+                    font-size: 40px;
                 }
 
                 @media (max-width:529px) {
@@ -61,21 +77,31 @@
                     padding: 0.1rem 0;
                 }
 
-                @media (max-height:706px) {
-                    font-size: 45px;
-
+                @media (max-width: 307px) {
+                    font-size: 23px;
+                    padding: 0.1rem 0;
                 }
 
+                // ALTURA
+
                 @media (max-height:700px) and (max-width:402px) {
-                    font-size: 25px;
+                    font-size: 30px;
                 }
 
                 @media (max-height:708px) and (max-width:352px) {
-                    font-size: 25px;
+                    font-size: 30px;
                 }
 
                 @media (max-height:695px) and (max-width:574px) {
-                    font-size: 40px;
+                    font-size: 29px;
+                }
+
+                @media (max-height:645px) and (max-width:421px) {
+                    font-size: 28px;
+                }
+
+                @media (max-height:363px) and (max-width:591px) {
+                    font-size: 25px;
                 }
             }
         }

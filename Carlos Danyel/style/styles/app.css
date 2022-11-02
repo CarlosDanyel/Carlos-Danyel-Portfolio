@@ -176,14 +176,29 @@ header .header__navbar .navbar__container .header__navbarList:hover {
   font-weight: 700;
   color: #F8F9FA;
 }
-@media screen and (max-width: 751px) {
+@media screen and (max-width: 1200px) {
   .home .home__container__text .home__titulo {
     font-size: 55px;
   }
 }
+@media screen and (max-width: 1050px) {
+  .home .home__container__text .home__titulo {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home .home__container__text .home__titulo {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 751px) {
+  .home .home__container__text .home__titulo {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 637px) {
   .home .home__container__text .home__titulo {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 529px) {
@@ -209,24 +224,35 @@ header .header__navbar .navbar__container .header__navbarList:hover {
     padding: 0.1rem 0;
   }
 }
-@media screen and (max-height: 706px) {
+@media screen and (max-width: 307px) {
   .home .home__container__text .home__titulo {
-    font-size: 50px;
+    font-size: 23px;
+    padding: 0.1rem 0;
   }
 }
 @media screen and (max-height: 700px) and (max-width: 402px) {
   .home .home__container__text .home__titulo {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media screen and (max-height: 708px) and (max-width: 352px) {
   .home .home__container__text .home__titulo {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media screen and (max-height: 695px) and (max-width: 574px) {
   .home .home__container__text .home__titulo {
-    font-size: 40px;
+    font-size: 29px;
+  }
+}
+@media screen and (max-height: 645px) and (max-width: 421px) {
+  .home .home__container__text .home__titulo {
+    font-size: 28px;
+  }
+}
+@media screen and (max-height: 363px) and (max-width: 591px) {
+  .home .home__container__text .home__titulo {
+    font-size: 25px;
   }
 }
 .home .home__container__text .home__descricao {

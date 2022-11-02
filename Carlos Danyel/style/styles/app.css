@@ -176,19 +176,24 @@ header .header__navbar .navbar__container .header__navbarList:hover {
   font-weight: 700;
   color: #F8F9FA;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   .home .home__container__text .home__titulo {
     font-size: 55px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home .home__container__text .home__titulo {
+    font-size: 53px;
   }
 }
 @media screen and (max-width: 1050px) {
   .home .home__container__text .home__titulo {
-    font-size: 55px;
+    font-size: 52px;
   }
 }
 @media screen and (max-width: 900px) {
   .home .home__container__text .home__titulo {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 751px) {
